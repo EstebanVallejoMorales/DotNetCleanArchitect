@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using CleanArchitectureApp.Entities.POCOS;
 using Microsoft.EntityFrameworkCore;
 
 namespace CleanArchitectureApp.Models;

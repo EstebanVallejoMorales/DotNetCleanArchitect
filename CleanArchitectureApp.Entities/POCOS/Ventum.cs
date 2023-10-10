@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CleanArchitectureApp.Models;
+namespace CleanArchitectureApp.Entities.POCOS;
 
 public partial class Ventum
 {

@@ -15,4 +15,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CleanArchitectureApp.Entities\CleanArchitectureApp.Entities.csproj" />
+  </ItemGroup>
+
 </Project>

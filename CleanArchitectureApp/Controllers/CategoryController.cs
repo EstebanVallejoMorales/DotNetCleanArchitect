@@ -1,4 +1,5 @@
-﻿using CleanArchitectureApp.Models;
+﻿using CleanArchitectureApp.Entities.POCOS;
+using CleanArchitectureApp.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CleanArchitectureApp.Controllers
