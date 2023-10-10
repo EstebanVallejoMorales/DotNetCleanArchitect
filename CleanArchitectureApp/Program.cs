@@ -1,7 +1,17 @@
+using CleanArchitectureApp.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//This allow us to inject in any controller
+builder.Services.AddDbContext<BdventaContext>(optionsBuilder =>
+{
+    optionsBuilder.UseSqlServer("server=DESKTOP-07LAHVE;database=BDVenta;Integrated Security=True;Encrypt=false");
+});
 
 var app = builder.Build();
 

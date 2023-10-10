@@ -5,6 +5,13 @@ namespace CleanArchitectureApp.Controllers
 {
     public class CategoryController : Controller
     {
+        private BdventaContext _bdventaContext;
+
+        public CategoryController(BdventaContext context) //Injection of DbContext configured in Program.cs
+        {
+            this._bdventaContext = context;
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -12,18 +19,12 @@ namespace CleanArchitectureApp.Controllers
 
         public List<Categorium> GetCategories()
         {
-            using (BdventaContext context = new BdventaContext())
-            {
-                return context.Categoria.ToList();
-            }
+            return _bdventaContext.Categoria.ToList(); //Now, we can use it in any method.
         }
 
         public List<Categorium> GetCategoriesByName(string name)
         {
-            using(BdventaContext context = new BdventaContext())
-            {
-                return context.Categoria.Where(c => c.Nombre.Contains(name)).ToList();
-            }
+            return _bdventaContext.Categoria.Where(c => c.Nombre.Contains(name)).ToList();
         }
     }
 }
