@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using CleanArchitectureApp.Entities.POCOS;
 using Microsoft.EntityFrameworkCore;
 
-namespace CleanArchitectureApp.Models;
+namespace CleanArchitectureApp.EfCore;
 
 public partial class BdventaContext : DbContext
 {

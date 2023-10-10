@@ -1,4 +1,5 @@
-﻿using CleanArchitectureApp.Entities.POCOS;
+﻿using CleanArchitectureApp.EfCore;
+using CleanArchitectureApp.Entities.POCOS;
 using CleanArchitectureApp.Models;
 using Microsoft.AspNetCore.Mvc;
 
