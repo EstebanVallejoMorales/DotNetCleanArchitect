@@ -1,4 +1,5 @@
 ﻿using CleanArchitectureApp.EfCore;
+using CleanArchitectureApp.Entities.Interfaces;
 using CleanArchitectureApp.Entities.POCOS;
 using CleanArchitectureApp.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -7,11 +8,11 @@ namespace CleanArchitectureApp.Controllers
 {
     public class CategoryController : Controller
     {
-        private BdventaContext _bdventaContext;
+        private readonly ICategoryRepository _categoryRepository;
 
-        public CategoryController(BdventaContext context) //Injection of DbContext configured in Program.cs
+        public CategoryController(ICategoryRepository categoryRepository) //Injection of DbContext configured in Program.cs
         {
-            this._bdventaContext = context;
+            this._categoryRepository = categoryRepository;
         }
 
         public IActionResult Index()
@@ -21,12 +22,12 @@ namespace CleanArchitectureApp.Controllers
 
         public List<Categorium> GetCategories()
         {
-            return _bdventaContext.Categoria.ToList(); //Now, we can use it in any method.
+            return _categoryRepository.GetCategories();
         }
 
         public List<Categorium> GetCategoriesByName(string name)
         {
-            return _bdventaContext.Categoria.Where(c => c.Nombre.Contains(name)).ToList();
+            return _categoryRepository.GetCategoriesByName(name);
         }
     }
 }
