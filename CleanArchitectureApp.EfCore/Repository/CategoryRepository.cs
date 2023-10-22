@@ -44,9 +44,9 @@ namespace CleanArchitectureApp.EfCore.Repository
         {
             try
             {
-                var category = _bdventaContext.Categoria 
-                    .Where(c=>c.Iidcategoria==Iidcategoria).FirstOrDefault();
-                if (category!=null)
+                var category = _bdventaContext.Categoria
+                    .Where(c => c.Iidcategoria == Iidcategoria).FirstOrDefault();
+                if (category != null)
                 {
                     category.Bhabilitado = 0;
                     _bdventaContext.Update(category);
@@ -68,6 +68,7 @@ namespace CleanArchitectureApp.EfCore.Repository
                     .Where(c => c.Iidcategoria == category.Iidcategoria).FirstOrDefault();
                 if (categoryDb != null)
                 {
+                    categoryDb = category;
                     _bdventaContext.Update(categoryDb);
                     return true;
                 }

@@ -8,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.DependenciyEf();
+
 ////This allow us to inject in any controller
 //builder.Services.AddDbContext<BdventaContext>(optionsBuilder =>
 //{
