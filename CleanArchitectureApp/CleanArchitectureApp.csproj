@@ -10,6 +10,8 @@
     <ProjectReference Include="..\CleanArchitectureApp.Dto\CleanArchitectureApp.Dto.csproj" />
     <ProjectReference Include="..\CleanArchitectureApp.EfCore\CleanArchitectureApp.EfCore.csproj" />
     <ProjectReference Include="..\CleanArchitectureApp.Entities\CleanArchitectureApp.Entities.csproj" />
+    <ProjectReference Include="..\CleanArchitectureApp.Interactor\CleanArchitectureApp.Interactor.csproj" />
+    <ProjectReference Include="..\CleanArchitectureApp.Presenter\CleanArchitectureApp.Presenter.csproj" />
   </ItemGroup>
 
 </Project>

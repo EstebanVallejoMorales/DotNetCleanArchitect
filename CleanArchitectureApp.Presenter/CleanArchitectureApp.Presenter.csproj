@@ -11,8 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CleanArchitectureApp.Entities\CleanArchitectureApp.Entities.csproj" />
-    <ProjectReference Include="..\CleanArchitectureApp.InputPort\CleanArchitectureApp.InputPort.csproj" />
     <ProjectReference Include="..\CleanArchitectureApp.OutputPort\CleanArchitectureApp.OutputPort.csproj" />
   </ItemGroup>
 

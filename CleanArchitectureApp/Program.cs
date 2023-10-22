@@ -1,4 +1,6 @@
 using CleanArchitectureApp.EfCore;
+using CleanArchitectureApp.Interactor;
+using CleanArchitectureApp.Presenter;
 using CleanArchitectureApp.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -8,6 +10,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.DependenciyEf();
+builder.Services.DependencyInteractor();
+builder.Services.DependencyPresenter();
 
 ////This allow us to inject in any controller
 //builder.Services.AddDbContext<BdventaContext>(optionsBuilder =>
