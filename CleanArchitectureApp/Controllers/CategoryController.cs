@@ -1,4 +1,5 @@
-﻿using CleanArchitectureApp.EfCore;
+﻿using CleanArchitectureApp.DTO;
+using CleanArchitectureApp.EfCore;
 using CleanArchitectureApp.Entities.Interfaces;
 using CleanArchitectureApp.Entities.POCOS;
 using CleanArchitectureApp.Models;
@@ -20,14 +21,24 @@ namespace CleanArchitectureApp.Controllers
             return View();
         }
 
-        public List<Categorium> GetCategories()
+        public List<CategoryDto> GetCategories()
         {
-            return _categoryRepository.GetCategories();
+            return _categoryRepository.GetCategories().Select(cat => new CategoryDto
+            {
+                CategoryId = cat.Iidcategoria,
+                CategoryName = cat.Nombre,
+                Description = cat.Descripcion
+            }).ToList();
         }
 
-        public List<Categorium> GetCategoriesByName(string name)
+        public List<CategoryDto> GetCategoriesByName(string name)
         {
-            return _categoryRepository.GetCategoriesByName(name);
+            return _categoryRepository.GetCategoriesByName(name).Select(cat => new CategoryDto
+            {
+                CategoryId = cat.Iidcategoria,
+                CategoryName = cat.Nombre,
+                Description = cat.Descripcion
+            }).ToList();
         }
     }
 }
