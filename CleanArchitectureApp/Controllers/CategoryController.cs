@@ -1,8 +1,5 @@
-﻿using CleanArchitectureApp.DTO;
-using CleanArchitectureApp.EfCore;
+﻿using CleanArchitectureApp.Dto.Category;
 using CleanArchitectureApp.Entities.Interfaces;
-using CleanArchitectureApp.Entities.POCOS;
-using CleanArchitectureApp.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CleanArchitectureApp.Controllers

@@ -1,4 +1,4 @@
-﻿namespace CleanArchitectureApp.DTO
+﻿namespace CleanArchitectureApp.Dto.Category
 {
     public class CategoryDto
     {

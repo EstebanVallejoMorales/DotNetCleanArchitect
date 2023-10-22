@@ -17,11 +17,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InterfaceAdapters", "Interf
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrameworksAndDrivers", "FrameworksAndDrivers", "{5A82E051-2613-455B-A31F-DC503368EBA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureApp.InputPort", "..\CleanArchitectureApp.InputPort\CleanArchitectureApp.InputPort.csproj", "{86A5287F-71FB-443C-BADB-2C365342F161}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitectureApp.InputPort", "..\CleanArchitectureApp.InputPort\CleanArchitectureApp.InputPort.csproj", "{86A5287F-71FB-443C-BADB-2C365342F161}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureApp.OutputPort", "..\CleanArchitectureApp.OutputPort\CleanArchitectureApp.OutputPort.csproj", "{2F809A53-1C0B-410E-B38A-4CD336B411CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitectureApp.OutputPort", "..\CleanArchitectureApp.OutputPort\CleanArchitectureApp.OutputPort.csproj", "{2F809A53-1C0B-410E-B38A-4CD336B411CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureApp.Interactor", "..\CleanArchitectureApp.Interactor\CleanArchitectureApp.Interactor.csproj", "{BD0E7EE6-BF2D-401B-9C0D-40D166161915}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitectureApp.Interactor", "..\CleanArchitectureApp.Interactor\CleanArchitectureApp.Interactor.csproj", "{BD0E7EE6-BF2D-401B-9C0D-40D166161915}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureApp.Dto", "..\CleanArchitectureApp.Dto\CleanArchitectureApp.Dto.csproj", "{489FA36A-728F-4C70-8D10-B8C019E5D190}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +55,10 @@ Global
 		{BD0E7EE6-BF2D-401B-9C0D-40D166161915}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD0E7EE6-BF2D-401B-9C0D-40D166161915}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD0E7EE6-BF2D-401B-9C0D-40D166161915}.Release|Any CPU.Build.0 = Release|Any CPU
+		{489FA36A-728F-4C70-8D10-B8C019E5D190}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{489FA36A-728F-4C70-8D10-B8C019E5D190}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{489FA36A-728F-4C70-8D10-B8C019E5D190}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{489FA36A-728F-4C70-8D10-B8C019E5D190}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{86A5287F-71FB-443C-BADB-2C365342F161} = {805738EF-0872-4DD8-B214-A232CEF1FD5C}
 		{2F809A53-1C0B-410E-B38A-4CD336B411CE} = {805738EF-0872-4DD8-B214-A232CEF1FD5C}
 		{BD0E7EE6-BF2D-401B-9C0D-40D166161915} = {805738EF-0872-4DD8-B214-A232CEF1FD5C}
+		{489FA36A-728F-4C70-8D10-B8C019E5D190} = {805738EF-0872-4DD8-B214-A232CEF1FD5C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {68D44D9D-8E4F-4FFE-A4E2-7D8D4793C924}
