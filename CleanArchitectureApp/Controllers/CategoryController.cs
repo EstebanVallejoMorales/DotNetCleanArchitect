@@ -37,5 +37,19 @@ namespace CleanArchitectureApp.Controllers
                 Description = cat.Descripcion
             }).ToList();
         }
+
+        public bool DeleteCategory(int categoryId)
+        {
+            bool response = false;
+            try
+            {
+                response = _categoryRepository.RemoveCategory(categoryId);
+            }
+            catch (Exception ex)
+            {
+                response = false;
+            }
+            return response;
+        }
     }
 }

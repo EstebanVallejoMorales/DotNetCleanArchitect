@@ -19,7 +19,10 @@ namespace CleanArchitectureApp.EfCore
             /*Used to register services that are created once per request in an ASP.NET Core web application. 
              * Scoped means that each time an HTTP request is received, a new instance of the service is created 
              * and used for the duration of that request. When the request completes, the service is discarded.*/
+            
             services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<IUnitOfWorkRepository, UnitOfWorkRepository>();
+
             //Note: AddDbContext is also an Extension method from EntityframeworkCore
             services.AddDbContext<BdventaContext>(optionsBuilder =>
             {
